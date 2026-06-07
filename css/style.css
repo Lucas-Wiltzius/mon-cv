@@ -124,8 +124,16 @@ footer {
 }
 
 /* Compétences */
+#competences .contenu {
+  display: flex;
+  gap: 30px;
+}
+
 .competences-groupe {
-  margin-bottom: 25px;
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .competences-groupe h3 {
@@ -222,4 +230,9 @@ footer {
   section {
     padding: 20px;
   }
+
+  #competences .contenu {
+    flex-direction: column;
+  }
+
 }
