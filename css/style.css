@@ -53,6 +53,9 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a {
@@ -242,13 +245,23 @@ footer {
     background-color: #2980b9;
 }
 
-@media (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+/* Hamburger - styles de base */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 28px;
+    cursor: pointer;
+}
 
+.nav-liens {
+    display: flex;
+    gap: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
     header h1 {
         font-size: 32px;
     }
@@ -261,4 +274,26 @@ footer {
         flex-direction: column;
     }
 
+    .hamburger {
+        display: block;
+    }
+
+    .nav-liens {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-liens.ouvert {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }
