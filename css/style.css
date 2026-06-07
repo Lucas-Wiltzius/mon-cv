@@ -84,6 +84,83 @@ footer {
     font-size: 14px;
 }
 
+/* Expériences & Formation */
+.experience-item, .formation-item {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.experience-item h3, .formation-item h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.etablissement {
+  color: #3498db;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.date {
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.experience-item ul {
+  padding-left: 20px;
+}
+
+.experience-item ul li {
+  margin-bottom: 5px;
+  color: #555555;
+}
+
+/* Compétences */
+.competences-groupe {
+  margin-bottom: 25px;
+}
+
+.competences-groupe h3 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.competences-groupe ul {
+  padding-left: 20px;
+}
+
+.competences-groupe ul li {
+  margin-bottom: 5px;
+  color: #555555;
+}
+
+/* Contact */
+.contact-item {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.contact-item a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* À propos */
+#apropos p {
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
 @media (max-width: 768px) {
   nav {
     display: flex;
