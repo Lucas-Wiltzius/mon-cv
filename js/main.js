@@ -24,3 +24,12 @@ const navLiens = document.getElementById('nav-liens');
 hamburger.addEventListener('click', function () {
   navLiens.classList.toggle('ouvert');
 });
+
+// On sélectionne tous les liens
+const liens = document.querySelectorAll('.nav-liens a')
+
+liens.forEach(function (lien) {
+  lien.addEventListener('click', function () {
+    navLiens.classList.remove('ouvert');
+  });
+});
