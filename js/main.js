@@ -33,3 +33,19 @@ liens.forEach(function (lien) {
     navLiens.classList.remove('ouvert');
   });
 });
+
+// Barres de progression
+const barres = document.querySelectorAll('.barre-progression');
+
+const observerBarres = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      const progression = entry.target.dataset.progression;
+      entry.target.style.width = progression + '%';
+    }
+  });
+});
+
+barres.forEach(function(barre) {
+  observerBarres.observe(barre);
+});
