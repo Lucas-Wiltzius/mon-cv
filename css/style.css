@@ -338,6 +338,7 @@ section:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Media Queries */
 @media (max-width: 768px) {
     header h1 {
@@ -374,4 +375,75 @@ section:hover {
         align-items: center;
         justify-content: center;
     }
+}
+
+/* Toggle theme bouton */
+.toggle-theme {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Dark mode */
+/* Dark mode */
+body.dark {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark section {
+    background-color: #2d2d2d;
+}
+
+body.dark nav {
+    background-color: #1a0800;
+}
+
+body.dark header {
+    background-color: #0d0500;
+}
+
+body.dark header h1 {
+    color: #ff9a4d;
+}
+
+body.dark header p {
+    color: #e8711a;
+}
+
+body.dark .logo {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(80%) saturate(500%) hue-rotate(340deg) brightness(110%);
+}
+
+body.dark h2,
+body.dark h3 {
+    color: #ff9a4d;
+}
+
+body.dark .competences-groupe {
+    background-color: #3a3a3a;
+}
+
+body.dark footer {
+    background-color: #0d0500;
+}
+
+body.dark .experience-item,
+body.dark .formation-item,
+body.dark .projet-item {
+    border-bottom: 1px solid #444444;
+}
+
+body.dark .etablissement {
+    color: #ff9a4d;
+}
+
+body.dark nav a {
+    color: #e0e0e0;
+}
+
+body.dark nav a:hover {
+    color: #ff9a4d;
 }

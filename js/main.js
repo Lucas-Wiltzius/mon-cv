@@ -37,8 +37,8 @@ liens.forEach(function (lien) {
 // Barres de progression
 const barres = document.querySelectorAll('.barre-progression');
 
-const observerBarres = new IntersectionObserver(function(entries) {
-  entries.forEach(function(entry) {
+const observerBarres = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       const progression = entry.target.dataset.progression;
       entry.target.style.width = progression + '%';
@@ -46,6 +46,27 @@ const observerBarres = new IntersectionObserver(function(entries) {
   });
 });
 
-barres.forEach(function(barre) {
+barres.forEach(function (barre) {
   observerBarres.observe(barre);
+});
+
+// Dark mode
+const toggleTheme = document.getElementById('toggle-theme');
+
+// Vérifier si l'utilisateur avait déjà choisi le dark mode
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark');
+  toggleTheme.textContent = '☀️';
+}
+
+toggleTheme.addEventListener('click', function () {
+  document.body.classList.toggle('dark');
+
+  if (document.body.classList.contains('dark')) {
+    toggleTheme.textContent = '☀️';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    toggleTheme.textContent = '🌙';
+    localStorage.setItem('theme', 'light');
+  }
 });
