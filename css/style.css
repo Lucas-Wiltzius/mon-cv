@@ -338,6 +338,12 @@ section:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Langues */
+.langue-item h3 {
+    color: #333333;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
 
 /* Media Queries */
 @media (max-width: 768px) {
