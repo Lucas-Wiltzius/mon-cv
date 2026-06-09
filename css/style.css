@@ -362,6 +362,43 @@ section:hover {
     margin-bottom: 5px;
 }
 
+/* Page 404 */
+.page-404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    gap: 20px;
+}
+
+.page-404 h1 {
+    font-size: 120px;
+    color: #d25a06;
+    line-height: 1;
+}
+
+.page-404 p {
+    font-size: 24px;
+    color: #555555;
+}
+
+.page-404 a {
+    display: inline-block;
+    background-color: #d25a06;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.page-404 a:hover {
+    background-color: #b54e05;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     header h1 {
