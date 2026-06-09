@@ -38,6 +38,23 @@ header {
     color: white;
 }
 
+/* Bouton CV */
+.btn-cv {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #d25a06;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cv:hover {
+    background-color: #b54e05;
+}
 
 .logo {
     width: 100px;
@@ -452,4 +469,41 @@ body.dark nav a {
 
 body.dark nav a:hover {
     color: #ff9a4d;
+}
+
+/* CSS impression */
+@media print {
+
+    nav,
+    .btn-cv,
+    .toggle-theme,
+    .hamburger {
+        display: none !important;
+    }
+
+    body {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    section {
+        box-shadow: none;
+        border: 1px solid #eeeeee;
+        break-inside: avoid;
+    }
+
+    header {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    header h1,
+    header p {
+        color: #000000;
+    }
+
+    .barre-progression {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
 }
